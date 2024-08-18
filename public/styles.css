@@ -1,0 +1,41 @@
+body {
+    background-image: url(landingBG.jpg);
+    background-size:cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .header img.logo {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+  }
+  
+  
+  .login-container {
+    background-color: ghostwhite;
+    opacity: 95%;
+    color:#1e3f5a;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .form-label {
+    color:#1e3f5a;
+  }
+  
+  .btn-primary {
+    background-color: #1e3f5a;
+    border-color: #1e3f5a;
+  }
+  

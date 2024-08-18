@@ -1,19 +1,25 @@
-const path = require('path')
+const path = require('path');
 
 module.exports = {
-    mode: 'development',
-    entry: './src/index.js',
-    output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js'
-    },
-    watch: true,
-    resolve: {
-        alias: {
-          "firebase/app": require.resolve("firebase/app"),
-          "firebase/firestore": require.resolve("firebase/firestore"),
-        },
-    },
-      
-      
-}
+  entry: './src/index.js',
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'public')
+  },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        type: 'asset/resource',
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+      },
+    ]
+  }
+};
