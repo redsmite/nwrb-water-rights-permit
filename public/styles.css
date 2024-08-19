@@ -8,15 +8,6 @@ body {
     color: #f7f7f7
   }
 
-  .header-top{
-    background-color: #0275d8;
-    position: fixed;
-    top: 0; 
-    width: 100%;
-    height: 25px;
-    opacity: 80%;
-  }
-
   .header {
     display: flex;
     align-items: center;
@@ -48,14 +39,3 @@ body {
     border-color: #0275d8;
   }
   
-  .footer-bottom {
-    position: fixed;
-    height: 25px;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #0275d8;
-    color: white;
-    text-align: center;
-    opacity: 80%;
-  }
