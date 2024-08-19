@@ -18,7 +18,7 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 // Path to your CSV file
-const filePath = './permittee-permittee-no..csv';
+const filePath = './permittee-permittee-no.2.csv';
 
 const uploadCSVToFirestore = async () => {
   const data = [];
