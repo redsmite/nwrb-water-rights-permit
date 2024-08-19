@@ -4,12 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <h2>Welcome to the Dashboard!</h2>
-    <button onclick="logout()">Logout</button>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2 class="sidebar-title">Dashboard</h2>
+            <ul class="sidebar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="logout()">Logout</a>
+                </li>
+            </ul>
+        </div>
 
-    <script type="module" src="dashboard.js"></script>
+        <!-- Main Content -->
+        <div class="content">
+            <!-- Centered Search Bar -->
+            <div class="row justify-content-center mb-4">
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="searchBar" placeholder="Search by Permit No.">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" id="searchButton" onclick="search()">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Table -->
+            <table class="table table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Permit No.</th>
+                        <th>Permittee</th>
+                        <th>Latitude</th>
+                        <th>Longitude</th>
+                        <th>Paid</th>
+                        <th>Balance</th>
+                        <th>Edit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be populated dynamically by dashboard.js -->
+                </tbody>
+            </table>
+
+            <!-- Pagination Controls -->
+            <div class="text-center">
+                <button class="btn btn-primary" id="nextPageBtn" onclick="nextPage()">Next Page</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="dashboard.js" type="module"></script>
 </body>
 </html>

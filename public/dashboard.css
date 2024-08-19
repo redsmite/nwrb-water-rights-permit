@@ -1,0 +1,66 @@
+/* Basic reset and layout */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.d-flex {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+}
+
+#searchBar {
+    margin-top: 10px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px; /* Adjust the width of the sidebar */
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    overflow-y: auto; /* Allows scrolling if content exceeds viewport height */
+}
+
+.sidebar-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sidebar-nav {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-nav .nav-item {
+    margin-bottom: 10px;
+}
+
+.sidebar-nav .nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar-nav .nav-link:hover {
+    text-decoration: underline;
+}
+
+.content {
+    margin-left: 250px; /* Match the width of the sidebar */
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto; /* Allows scrolling in the content area */
+    height: 100vh; /* Full viewport height */
+    box-sizing: border-box; /* Ensures padding is included in height */
+}
+
+.table {
+    width: 100%;
+}
+
+.btn-primary {
+    margin-top: 10px;
+}
