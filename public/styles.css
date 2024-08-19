@@ -5,18 +5,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #f7f7f7
+    color: white;
   }
 
   .header-top{
     background-color: #0275d8;
     position: fixed;
-    top: 0; 
+    top: 0;
     width: 100%;
     height: 25px;
-    opacity: 80%;
+    opacity: 95%;
   }
-
   .header {
     display: flex;
     align-items: center;
@@ -48,14 +47,12 @@ body {
     border-color: #0275d8;
   }
   
-  .footer-bottom {
+  .footer-bottom{
     position: fixed;
-    height: 25px;
-    left: 0;
-    bottom: 0;
     width: 100%;
+    bottom: 0;
     background-color: #0275d8;
-    color: white;
+    opacity: 95%;
     text-align: center;
-    opacity: 80%;
+    color: #f7f7f7;
   }
