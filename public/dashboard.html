@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="logo.png" width="30" height="30" alt="NWRB Logo">NWRPS
+        </a>
+        <div>
+            <a href="#" class="btn btn-outline-primary">Profile</a>
+            <a href="#" class="btn btn-outline-danger">Logout</a>
+        </div>
+    </nav>
+
+    <!-- Search Bar -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-12">
+                <form class="form-inline">
+                    <label for="searchPermit" class="mr-2">Search Permit No.:</label>
+                    <input type="text" class="form-control mr-2" id="searchPermit" placeholder="Enter Permit No.">
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Bootstrap Table -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Permit No.</th>
+                            <th>Permittee</th>
+                            <th>Location</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>00123</td>
+                            <td>John Doe</td>
+                            <td>Location A</td>
+                            <td>Active</td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+  <footer class="footer-bottom">©2024 Developed by Water Resources Utilization Section - National Capital Region.</footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
